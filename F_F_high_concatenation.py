@@ -4,6 +4,7 @@ import torch.nn.functional as F
 class FFHighEncoder(nn.Module):
     # This is the encoder used for concatenating the F and F_high image
     # The structure implemented here is the same as the one used in the live portrait paper Fig.A12
+    # The output of this encoder is the triplane representation
     def __init__(self):
         super().__init__()
         self.conv1 = nn.Conv2d(192,256,kernel_zie = (3,3), stride = (1,1), padding = (1,1))
