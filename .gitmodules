@@ -1,0 +1,9 @@
+[submodule "SegFormer"]
+	path = SegFormer
+	url = git@github.com:NVlabs/SegFormer.git
+[submodule "eg3d"]
+	path = eg3d
+	url = git@github.com:NVlabs/eg3d.git
+[submodule "segmentation_models.pytorch"]
+	path = segmentation_models.pytorch
+	url = git@github.com:qubvel/segmentation_models.pytorch.git
