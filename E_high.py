@@ -1,6 +1,9 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
+# Note the input x to the encoder should be the original image + its orginal pixel coordinates
+# which yeilds a 5 channel image
+
 
 class EncoderHigh(nn.Module):
     # This is the module that encodes the input original image to a feature map with high frequency
