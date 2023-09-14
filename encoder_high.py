@@ -5,7 +5,7 @@ import torch.nn.functional as F
 # which yeilds a 5 channel image
 
 
-class EncoderHigh(nn.Module):
+class IFHighEncoder(nn.Module):
     # This is the module that encodes the input original image to a feature map with high frequency
     # The structure implemented here is the same as the one used in the live portrait paper Fig.A11
     def __init__(self):
@@ -31,7 +31,7 @@ class EncoderHigh(nn.Module):
         x = F.leaky_relu(x,negative_slope=0.01)
         return x
 
-class EncoderHighLT(nn.Module):
+class IFHighEncoderLT(nn.Module):
     # This is the light version of module that encodes the input original image to a feature map with high frequency
     # The structure implemented here is the same as the one used in the live portrait paper Fig.A11
     def __init__(self):
